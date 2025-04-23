@@ -1,5 +1,5 @@
 [project]
-name = "lm-basics"
+name = "tinylm"
 version = "0.1.0"
 description = "training a tiny language model from scratch with the tinystories dataset and my Qwen2 model"
 readme = "README.md"
