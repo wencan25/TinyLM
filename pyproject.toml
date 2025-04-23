@@ -1,0 +1,15 @@
+[project]
+name = "lm-basics"
+version = "0.1.0"
+description = "training a tiny language model from scratch with the tinystories dataset and my Qwen2 model"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.6.0",
+    "datasets>=3.5.0",
+    "easydict>=1.13",
+    "tensorboard>=2.19.0",
+    "torch>=2.6.0",
+    "transformers>=4.51.3",
+    "ipykernel>=6.29.5",
+]

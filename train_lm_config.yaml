@@ -1,0 +1,37 @@
+# data
+train_token_file: "datasets/TinyStoriesV2-GPT4/train_tokens.npy"
+val_token_file: "datasets/TinyStoriesV2-GPT4/valid_tokens.npy"
+train_batch_size: 160
+val_batch_size: 128
+num_workers: 16
+context_length: 512
+
+
+# model
+model_name: "my_Qwen2"
+vocab_size: 10000
+hidden_size: 512
+intermediate_size: 2048
+num_hidden_layers: 4
+num_attention_heads: 12
+num_key_value_heads: 2
+max_position_embeddings: 512
+attention_dropout: 0
+eos_token_id: 0
+
+
+# optimizer
+lr: 0.001
+weight_decay: 0.1
+min_lr_multi: 1.0
+
+
+# training
+gradient_accumulation_steps: 2
+seed: 42
+output_dir: "outputs/lm_my_Qwen2"
+max_epoch: 0.005
+val_interval: 0.005
+warmup_epochs: 0.0005
+max_grad_norm: 2.0
+logging_steps: 10
